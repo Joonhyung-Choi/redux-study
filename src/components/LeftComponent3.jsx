@@ -1,10 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useSelector } from 'react-redux';
 
 function LeftComponent3() {
+  const number = useSelector((state) => state)
+  
   return (
     <Wrapper>
       <H2>Left3</H2>
+      <h3>{number}</h3>
     </Wrapper>
   );
 }
